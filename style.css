@@ -1,0 +1,22 @@
+.calculator{
+    width: 280px;
+    height: 440;
+    background-color: #e8e8e8;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    border: 1px solid #777;
+}
+.main-bar{
+    text-align: right;
+}
+.button-area{
+    margin-top: 20px;
+}
+.button-area .line .btn{
+    width: 61px;
+    font-weight: bold;
+}
+.button-area .line{
+    padding-bottom: 10px;
+}

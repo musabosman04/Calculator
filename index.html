@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+  </head>
+
+
+  <body>
+    <div class="calculator">
+        <form action="" name="form">
+            <input type="text" placeholder="0" class="form-control main-bar" name="distpay">
+            <div class="button-area">
+                <div class="line">
+                    <input type="button" value="7" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="8" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="9" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="+" class="btn btn-warning" name="btn" onclick="calculator(this.value)">
+                </div>
+
+                <div class="line">
+                    <input type="button" value="4" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="5" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="6" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="*" class="btn btn-warning" name="btn" onclick="calculator(this.value)">
+                </div>
+
+                <div class="line">
+                    <input type="button" value="1" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="2" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="3" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="-" class="btn btn-warning" name="btn" onclick="calculator(this.value)">
+                </div>
+
+                <div class="line">
+                    <input type="button" value="0" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="00" class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="." class="btn btn-info" name="btn" onclick="calculator(this.value)">
+                    <input type="button" value="/" class="btn btn-warning" name="btn" onclick="calculator(this.value)">
+                </div>
+                <div class="line">
+                    <input type="button" value="c" class="btn btn-info" name="btn" onclick="distpay.value = null">
+                    <input type="button" value="back" class="btn btn-info" name="btn" onclick="distpay.value = distpay.value.slice(0, -1)">
+                    <input type="button" style="width: 126px;" value="=" class="btn btn-info" name="btn" onclick="distpay.value = eval(distpay.value)">
+                </div>
+            </div>
+        </form>
+    </div> 
+
+    <script>
+        function calculator (x){
+            form.distpay.value = form.distpay.value + x;
+        }
+    </script>
+  </body>
+</html>
